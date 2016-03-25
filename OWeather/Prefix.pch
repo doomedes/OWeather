@@ -1,0 +1,28 @@
+//
+//  Prefix.pch
+//  OWeather
+//
+//  Created by yuanyongguo on 16/3/25.
+//  Copyright © 2016年 youxinpai. All rights reserved.
+//
+
+
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "AFNetworking.h"
+
+//常量信息
+#import "ConstInfo.h"
+
+//网络请求相关
+#import "BasicRequestManagerQueue.h"
+#import "BasicRequestOperation.h"
+
+#import "CityListRequestOperation.h"
+
+
+
+//VC相关
+#import "BaseViewController.h"
+
