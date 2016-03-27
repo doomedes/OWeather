@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BasicRequestManagerQueue.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -14,6 +15,7 @@
 
 @property (strong,nonatomic) BasicRequestManagerQueue * managerQueue;
 
+-(void) showHomeWeather;
 
 @end
 

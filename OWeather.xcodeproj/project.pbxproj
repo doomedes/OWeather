@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4E0AA0F41CA4DC180058CEC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA0F31CA4DC180058CEC9 /* main.m */; };
 		4E0AA0F71CA4DC180058CEC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA0F61CA4DC180058CEC9 /* AppDelegate.m */; };
-		4E0AA0FA1CA4DC180058CEC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA0F91CA4DC180058CEC9 /* ViewController.m */; };
 		4E0AA0FD1CA4DC180058CEC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0AA0FB1CA4DC180058CEC9 /* Main.storyboard */; };
 		4E0AA0FF1CA4DC180058CEC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0AA0FE1CA4DC180058CEC9 /* Assets.xcassets */; };
 		4E0AA1021CA4DC180058CEC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0AA1001CA4DC180058CEC9 /* LaunchScreen.storyboard */; };
@@ -41,9 +40,6 @@
 		4E0AA15F1CA4E0D10058CEC9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0AA15E1CA4E0D10058CEC9 /* Security.framework */; };
 		4E0AA1611CA4E0D90058CEC9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0AA1601CA4E0D90058CEC9 /* MobileCoreServices.framework */; };
 		4E0AA1631CA4E0E10058CEC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E0AA1621CA4E0E10058CEC9 /* SystemConfiguration.framework */; };
-		4E0AA1681CA5049D0058CEC9 /* ConstInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1671CA5049D0058CEC9 /* ConstInfo.m */; };
-		4E0AA16E1CA515F00058CEC9 /* BasicRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA16D1CA515F00058CEC9 /* BasicRequestOperation.m */; };
-		4E0AA1711CA530C90058CEC9 /* BasicRequestManagerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1701CA530C90058CEC9 /* BasicRequestManagerQueue.m */; };
 		4E0AA1761CA53D590058CEC9 /* CityListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1751CA53D590058CEC9 /* CityListRequestOperation.m */; };
 		4E0AA1791CA5441C0058CEC9 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */; };
 		4E0AA17F1CA548020058CEC9 /* RecentWeathersRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA17E1CA548020058CEC9 /* RecentWeathersRequestOperation.m */; };
@@ -51,6 +47,20 @@
 		4E0AA1851CA548630058CEC9 /* CityNameRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1841CA548630058CEC9 /* CityNameRequestOperation.m */; };
 		4E0AA1881CA5487E0058CEC9 /* CityInfoRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1871CA5487E0058CEC9 /* CityInfoRequestOperation.m */; };
 		4E0AA18B1CA548AC0058CEC9 /* CityIdRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA18A1CA548AC0058CEC9 /* CityIdRequestOperation.m */; };
+		4E1C87C91CA65EDA006128D9 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87C71CA65EDA006128D9 /* LocationViewController.m */; };
+		4E1C87CA1CA65EDA006128D9 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C87C81CA65EDA006128D9 /* LocationViewController.xib */; };
+		4E1C87CE1CA67D49006128D9 /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87CC1CA67D49006128D9 /* CityCollectionViewCell.m */; };
+		4E1C87CF1CA67D49006128D9 /* CityCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C87CD1CA67D49006128D9 /* CityCollectionViewCell.xib */; };
+		4E1C87D31CA6844E006128D9 /* CityUpdateingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87D21CA6844E006128D9 /* CityUpdateingTableViewCell.m */; };
+		4E1C87D61CA6928A006128D9 /* CityHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87D51CA6928A006128D9 /* CityHotTableViewCell.m */; };
+		4E1C87DC1CA69844006128D9 /* NSObject+ExtendInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87DB1CA69844006128D9 /* NSObject+ExtendInfo.m */; };
+		4E45C8391CA5728900CA73B4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C8371CA5728900CA73B4 /* HomeViewController.m */; };
+		4E45C83A1CA5728900CA73B4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E45C8381CA5728900CA73B4 /* HomeViewController.xib */; };
+		4E45C83C1CA5737C00CA73B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E45C83B1CA5737C00CA73B4 /* CoreLocation.framework */; };
+		4E45C8411CA5743200CA73B4 /* ConstInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C83F1CA5743200CA73B4 /* ConstInfo.m */; };
+		4E45C8491CA57AB800CA73B4 /* BasicRequestManagerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C8461CA57AB800CA73B4 /* BasicRequestManagerQueue.m */; };
+		4E45C84A1CA57AB800CA73B4 /* BasicRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C8481CA57AB800CA73B4 /* BasicRequestOperation.m */; };
+		4E45C84D1CA5815700CA73B4 /* LocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C84C1CA5815700CA73B4 /* LocationOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,8 +68,6 @@
 		4E0AA0F31CA4DC180058CEC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4E0AA0F51CA4DC180058CEC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4E0AA0F61CA4DC180058CEC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4E0AA0F81CA4DC180058CEC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E0AA0F91CA4DC180058CEC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E0AA0FC1CA4DC180058CEC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E0AA0FE1CA4DC180058CEC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0AA1011CA4DC180058CEC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,17 +126,10 @@
 		4E0AA15E1CA4E0D10058CEC9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4E0AA1601CA4E0D90058CEC9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4E0AA1621CA4E0E10058CEC9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		4E0AA1651CA4E1430058CEC9 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = ../Prefix.pch; sourceTree = "<group>"; };
-		4E0AA1661CA5049D0058CEC9 /* ConstInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConstInfo.h; path = ../ConstInfo.h; sourceTree = "<group>"; };
-		4E0AA1671CA5049D0058CEC9 /* ConstInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConstInfo.m; path = ../ConstInfo.m; sourceTree = "<group>"; };
-		4E0AA16C1CA515F00058CEC9 /* BasicRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicRequestOperation.h; path = ../BasicRequestOperation.h; sourceTree = "<group>"; };
-		4E0AA16D1CA515F00058CEC9 /* BasicRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicRequestOperation.m; path = ../BasicRequestOperation.m; sourceTree = "<group>"; };
-		4E0AA16F1CA530C90058CEC9 /* BasicRequestManagerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BasicRequestManagerQueue.h; path = ../BasicRequestManagerQueue.h; sourceTree = "<group>"; };
-		4E0AA1701CA530C90058CEC9 /* BasicRequestManagerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BasicRequestManagerQueue.m; path = ../BasicRequestManagerQueue.m; sourceTree = "<group>"; };
 		4E0AA1741CA53D590058CEC9 /* CityListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityListRequestOperation.h; path = OWeather/NWKModel/CityListRequestOperation.h; sourceTree = SOURCE_ROOT; };
 		4E0AA1751CA53D590058CEC9 /* CityListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityListRequestOperation.m; path = OWeather/NWKModel/CityListRequestOperation.m; sourceTree = SOURCE_ROOT; };
-		4E0AA1771CA5441C0058CEC9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		4E0AA1771CA5441C0058CEC9 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ../BaseViewController.h; sourceTree = "<group>"; };
+		4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ../BaseViewController.m; sourceTree = "<group>"; };
 		4E0AA17D1CA548020058CEC9 /* RecentWeathersRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecentWeathersRequestOperation.h; path = OWeather/NWKModel/RecentWeathersRequestOperation.h; sourceTree = SOURCE_ROOT; };
 		4E0AA17E1CA548020058CEC9 /* RecentWeathersRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecentWeathersRequestOperation.m; path = OWeather/NWKModel/RecentWeathersRequestOperation.m; sourceTree = SOURCE_ROOT; };
 		4E0AA1801CA5482B0058CEC9 /* WeatherRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherRequestOperation.h; path = OWeather/NWKModel/WeatherRequestOperation.h; sourceTree = SOURCE_ROOT; };
@@ -139,6 +140,31 @@
 		4E0AA1871CA5487E0058CEC9 /* CityInfoRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityInfoRequestOperation.m; path = OWeather/NWKModel/CityInfoRequestOperation.m; sourceTree = SOURCE_ROOT; };
 		4E0AA1891CA548AC0058CEC9 /* CityIdRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityIdRequestOperation.h; path = OWeather/NWKModel/CityIdRequestOperation.h; sourceTree = SOURCE_ROOT; };
 		4E0AA18A1CA548AC0058CEC9 /* CityIdRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityIdRequestOperation.m; path = OWeather/NWKModel/CityIdRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		4E1C87C61CA65EDA006128D9 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		4E1C87C71CA65EDA006128D9 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		4E1C87C81CA65EDA006128D9 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
+		4E1C87CB1CA67D49006128D9 /* CityCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityCollectionViewCell.h; sourceTree = "<group>"; };
+		4E1C87CC1CA67D49006128D9 /* CityCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityCollectionViewCell.m; sourceTree = "<group>"; };
+		4E1C87CD1CA67D49006128D9 /* CityCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCollectionViewCell.xib; sourceTree = "<group>"; };
+		4E1C87D11CA6844E006128D9 /* CityUpdateingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityUpdateingTableViewCell.h; sourceTree = "<group>"; };
+		4E1C87D21CA6844E006128D9 /* CityUpdateingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityUpdateingTableViewCell.m; sourceTree = "<group>"; };
+		4E1C87D41CA6928A006128D9 /* CityHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityHotTableViewCell.h; sourceTree = "<group>"; };
+		4E1C87D51CA6928A006128D9 /* CityHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityHotTableViewCell.m; sourceTree = "<group>"; };
+		4E1C87DA1CA69844006128D9 /* NSObject+ExtendInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ExtendInfo.h"; sourceTree = "<group>"; };
+		4E1C87DB1CA69844006128D9 /* NSObject+ExtendInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ExtendInfo.m"; sourceTree = "<group>"; };
+		4E45C8361CA5728900CA73B4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		4E45C8371CA5728900CA73B4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		4E45C8381CA5728900CA73B4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		4E45C83B1CA5737C00CA73B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4E45C83E1CA5743200CA73B4 /* ConstInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstInfo.h; sourceTree = "<group>"; };
+		4E45C83F1CA5743200CA73B4 /* ConstInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstInfo.m; sourceTree = "<group>"; };
+		4E45C8401CA5743200CA73B4 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		4E45C8451CA57AB800CA73B4 /* BasicRequestManagerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicRequestManagerQueue.h; sourceTree = "<group>"; };
+		4E45C8461CA57AB800CA73B4 /* BasicRequestManagerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicRequestManagerQueue.m; sourceTree = "<group>"; };
+		4E45C8471CA57AB800CA73B4 /* BasicRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicRequestOperation.h; sourceTree = "<group>"; };
+		4E45C8481CA57AB800CA73B4 /* BasicRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicRequestOperation.m; sourceTree = "<group>"; };
+		4E45C84B1CA5815700CA73B4 /* LocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationOperation.h; sourceTree = "<group>"; };
+		4E45C84C1CA5815700CA73B4 /* LocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E45C83C1CA5737C00CA73B4 /* CoreLocation.framework in Frameworks */,
 				4E0AA1631CA4E0E10058CEC9 /* SystemConfiguration.framework in Frameworks */,
 				4E0AA1611CA4E0D90058CEC9 /* MobileCoreServices.framework in Frameworks */,
 				4E0AA15F1CA4E0D10058CEC9 /* Security.framework in Frameworks */,
@@ -175,15 +202,12 @@
 		4E0AA0F11CA4DC180058CEC9 /* OWeather */ = {
 			isa = PBXGroup;
 			children = (
-				4E0AA18C1CA548CA0058CEC9 /* Common */,
+				4E45C83D1CA5741F00CA73B4 /* Common */,
+				4E45C8351CA5726D00CA73B4 /* VCWeather */,
 				4E0AA1731CA53BAF0058CEC9 /* NWKModel */,
 				4E0AA1691CA5158E0058CEC9 /* Model */,
 				4E0AA0F51CA4DC180058CEC9 /* AppDelegate.h */,
 				4E0AA0F61CA4DC180058CEC9 /* AppDelegate.m */,
-				4E0AA1771CA5441C0058CEC9 /* BaseViewController.h */,
-				4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */,
-				4E0AA0F81CA4DC180058CEC9 /* ViewController.h */,
-				4E0AA0F91CA4DC180058CEC9 /* ViewController.m */,
 				4E0AA0FE1CA4DC180058CEC9 /* Assets.xcassets */,
 				4E0AA0F21CA4DC180058CEC9 /* Supporting Files */,
 			);
@@ -326,6 +350,7 @@
 		4E0AA1641CA4E10E0058CEC9 /* SysLib */ = {
 			isa = PBXGroup;
 			children = (
+				4E45C83B1CA5737C00CA73B4 /* CoreLocation.framework */,
 				4E0AA1621CA4E0E10058CEC9 /* SystemConfiguration.framework */,
 				4E0AA1601CA4E0D90058CEC9 /* MobileCoreServices.framework */,
 				4E0AA15E1CA4E0D10058CEC9 /* Security.framework */,
@@ -343,7 +368,7 @@
 		4E0AA16A1CA515B90058CEC9 /* MyLib */ = {
 			isa = PBXGroup;
 			children = (
-				4E0AA1721CA530E50058CEC9 /* MyNetWorkLib */,
+				4E45C8441CA57AB800CA73B4 /* MyNetWorkLib */,
 			);
 			path = MyLib;
 			sourceTree = "<group>";
@@ -356,17 +381,6 @@
 				4E0AA1091CA4DD630058CEC9 /* ThridLib */,
 			);
 			name = Libs;
-			sourceTree = "<group>";
-		};
-		4E0AA1721CA530E50058CEC9 /* MyNetWorkLib */ = {
-			isa = PBXGroup;
-			children = (
-				4E0AA16C1CA515F00058CEC9 /* BasicRequestOperation.h */,
-				4E0AA16D1CA515F00058CEC9 /* BasicRequestOperation.m */,
-				4E0AA16F1CA530C90058CEC9 /* BasicRequestManagerQueue.h */,
-				4E0AA1701CA530C90058CEC9 /* BasicRequestManagerQueue.m */,
-			);
-			path = MyNetWorkLib;
 			sourceTree = "<group>";
 		};
 		4E0AA1731CA53BAF0058CEC9 /* NWKModel */ = {
@@ -389,14 +403,59 @@
 			path = Model/NWKModel;
 			sourceTree = "<group>";
 		};
-		4E0AA18C1CA548CA0058CEC9 /* Common */ = {
+		4E1C87D01CA67D54006128D9 /* CityFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4E0AA1651CA4E1430058CEC9 /* Prefix.pch */,
-				4E0AA1661CA5049D0058CEC9 /* ConstInfo.h */,
-				4E0AA1671CA5049D0058CEC9 /* ConstInfo.m */,
+				4E1C87C61CA65EDA006128D9 /* LocationViewController.h */,
+				4E1C87C71CA65EDA006128D9 /* LocationViewController.m */,
+				4E1C87C81CA65EDA006128D9 /* LocationViewController.xib */,
+				4E1C87CB1CA67D49006128D9 /* CityCollectionViewCell.h */,
+				4E1C87CC1CA67D49006128D9 /* CityCollectionViewCell.m */,
+				4E1C87CD1CA67D49006128D9 /* CityCollectionViewCell.xib */,
+				4E1C87D11CA6844E006128D9 /* CityUpdateingTableViewCell.h */,
+				4E1C87D21CA6844E006128D9 /* CityUpdateingTableViewCell.m */,
+				4E1C87D41CA6928A006128D9 /* CityHotTableViewCell.h */,
+				4E1C87D51CA6928A006128D9 /* CityHotTableViewCell.m */,
+			);
+			name = CityFiles;
+			sourceTree = "<group>";
+		};
+		4E45C8351CA5726D00CA73B4 /* VCWeather */ = {
+			isa = PBXGroup;
+			children = (
+				4E1C87D01CA67D54006128D9 /* CityFiles */,
+				4E0AA1771CA5441C0058CEC9 /* BaseViewController.h */,
+				4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */,
+				4E45C8361CA5728900CA73B4 /* HomeViewController.h */,
+				4E45C8371CA5728900CA73B4 /* HomeViewController.m */,
+				4E45C8381CA5728900CA73B4 /* HomeViewController.xib */,
+			);
+			path = VCWeather;
+			sourceTree = "<group>";
+		};
+		4E45C83D1CA5741F00CA73B4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4E45C83E1CA5743200CA73B4 /* ConstInfo.h */,
+				4E45C83F1CA5743200CA73B4 /* ConstInfo.m */,
+				4E45C8401CA5743200CA73B4 /* Prefix.pch */,
+				4E45C84B1CA5815700CA73B4 /* LocationOperation.h */,
+				4E45C84C1CA5815700CA73B4 /* LocationOperation.m */,
+				4E1C87DA1CA69844006128D9 /* NSObject+ExtendInfo.h */,
+				4E1C87DB1CA69844006128D9 /* NSObject+ExtendInfo.m */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		4E45C8441CA57AB800CA73B4 /* MyNetWorkLib */ = {
+			isa = PBXGroup;
+			children = (
+				4E45C8451CA57AB800CA73B4 /* BasicRequestManagerQueue.h */,
+				4E45C8461CA57AB800CA73B4 /* BasicRequestManagerQueue.m */,
+				4E45C8471CA57AB800CA73B4 /* BasicRequestOperation.h */,
+				4E45C8481CA57AB800CA73B4 /* BasicRequestOperation.m */,
+			);
+			path = MyNetWorkLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,6 +489,11 @@
 				TargetAttributes = {
 					4E0AA0EE1CA4DC180058CEC9 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -457,9 +521,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0AA1021CA4DC180058CEC9 /* LaunchScreen.storyboard in Resources */,
+				4E1C87CA1CA65EDA006128D9 /* LocationViewController.xib in Resources */,
 				4E0AA0FF1CA4DC180058CEC9 /* Assets.xcassets in Resources */,
+				4E45C83A1CA5728900CA73B4 /* HomeViewController.xib in Resources */,
 				4E0AA1591CA4E0B40058CEC9 /* MJRefresh.bundle in Resources */,
 				4E0AA0FD1CA4DC180058CEC9 /* Main.storyboard in Resources */,
+				4E1C87CF1CA67D49006128D9 /* CityCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,20 +540,25 @@
 				4E0AA14B1CA4E0B40058CEC9 /* MJRefreshAutoFooter.m in Sources */,
 				4E0AA1521CA4E0B40058CEC9 /* MJRefreshAutoStateFooter.m in Sources */,
 				4E0AA1541CA4E0B40058CEC9 /* MJRefreshBackNormalFooter.m in Sources */,
+				4E45C84A1CA57AB800CA73B4 /* BasicRequestOperation.m in Sources */,
 				4E0AA1561CA4E0B40058CEC9 /* MJRefreshGifHeader.m in Sources */,
 				4E0AA15B1CA4E0B40058CEC9 /* UIScrollView+MJExtension.m in Sources */,
+				4E45C84D1CA5815700CA73B4 /* LocationOperation.m in Sources */,
+				4E1C87C91CA65EDA006128D9 /* LocationViewController.m in Sources */,
 				4E0AA11D1CA4E08F0058CEC9 /* AFURLSessionManager.m in Sources */,
-				4E0AA0FA1CA4DC180058CEC9 /* ViewController.m in Sources */,
 				4E0AA14F1CA4E0B40058CEC9 /* MJRefreshHeader.m in Sources */,
+				4E1C87D61CA6928A006128D9 /* CityHotTableViewCell.m in Sources */,
 				4E0AA15C1CA4E0B40058CEC9 /* UIScrollView+MJRefresh.m in Sources */,
 				4E0AA1791CA5441C0058CEC9 /* BaseViewController.m in Sources */,
 				4E0AA14C1CA4E0B40058CEC9 /* MJRefreshBackFooter.m in Sources */,
 				4E0AA15A1CA4E0B40058CEC9 /* MJRefreshConst.m in Sources */,
 				4E0AA0F71CA4DC180058CEC9 /* AppDelegate.m in Sources */,
+				4E1C87DC1CA69844006128D9 /* NSObject+ExtendInfo.m in Sources */,
 				4E0AA1191CA4E08F0058CEC9 /* AFNetworkReachabilityManager.m in Sources */,
-				4E0AA1681CA5049D0058CEC9 /* ConstInfo.m in Sources */,
-				4E0AA1711CA530C90058CEC9 /* BasicRequestManagerQueue.m in Sources */,
+				4E45C8411CA5743200CA73B4 /* ConstInfo.m in Sources */,
 				4E0AA1881CA5487E0058CEC9 /* CityInfoRequestOperation.m in Sources */,
+				4E45C8391CA5728900CA73B4 /* HomeViewController.m in Sources */,
+				4E1C87CE1CA67D49006128D9 /* CityCollectionViewCell.m in Sources */,
 				4E0AA1501CA4E0B40058CEC9 /* MJRefreshAutoGifFooter.m in Sources */,
 				4E0AA0F41CA4DC180058CEC9 /* main.m in Sources */,
 				4E0AA11A1CA4E08F0058CEC9 /* AFSecurityPolicy.m in Sources */,
@@ -495,6 +567,7 @@
 				4E0AA1821CA5482B0058CEC9 /* WeatherRequestOperation.m in Sources */,
 				4E0AA14D1CA4E0B40058CEC9 /* MJRefreshComponent.m in Sources */,
 				4E0AA1531CA4E0B40058CEC9 /* MJRefreshBackGifFooter.m in Sources */,
+				4E45C8491CA57AB800CA73B4 /* BasicRequestManagerQueue.m in Sources */,
 				4E0AA11B1CA4E08F0058CEC9 /* AFURLRequestSerialization.m in Sources */,
 				4E0AA1581CA4E0B40058CEC9 /* MJRefreshStateHeader.m in Sources */,
 				4E0AA1551CA4E0B40058CEC9 /* MJRefreshBackStateFooter.m in Sources */,
@@ -502,9 +575,9 @@
 				4E0AA1761CA53D590058CEC9 /* CityListRequestOperation.m in Sources */,
 				4E0AA1571CA4E0B40058CEC9 /* MJRefreshNormalHeader.m in Sources */,
 				4E0AA1511CA4E0B40058CEC9 /* MJRefreshAutoNormalFooter.m in Sources */,
-				4E0AA16E1CA515F00058CEC9 /* BasicRequestOperation.m in Sources */,
 				4E0AA17F1CA548020058CEC9 /* RecentWeathersRequestOperation.m in Sources */,
 				4E0AA1851CA548630058CEC9 /* CityNameRequestOperation.m in Sources */,
+				4E1C87D31CA6844E006128D9 /* CityUpdateingTableViewCell.m in Sources */,
 				4E0AA11C1CA4E08F0058CEC9 /* AFURLResponseSerialization.m in Sources */,
 				4E0AA1181CA4E08F0058CEC9 /* AFHTTPSessionManager.m in Sources */,
 			);
@@ -569,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -607,7 +680,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -618,8 +691,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/OWeather/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OWeather/Common/Prefix.pch";
 				INFOPLIST_FILE = OWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youxinpai.OWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,8 +704,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/OWeather/Prefix.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OWeather/Common/Prefix.pch";
 				INFOPLIST_FILE = OWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.youxinpai.OWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";

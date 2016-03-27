@@ -7,13 +7,15 @@
 //
 
 
-
+#import <CoreLocation/CoreLocation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "AFNetworking.h"
 
+#import "AppDelegate.h"
 //常量信息
 #import "ConstInfo.h"
+#import "NSObject+ExtendInfo.h"
 
 //网络请求相关
 #import "BasicRequestManagerQueue.h"
@@ -21,8 +23,9 @@
 
 #import "CityListRequestOperation.h"
 
-
+#import "LocationOperation.h"
 
 //VC相关
 #import "BaseViewController.h"
+
 

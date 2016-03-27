@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CityCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="208" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="208" height="51"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WhM-By-pSB">
+                        <rect key="frame" x="0.0" y="0.0" width="208" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WhM-By-pSB" secondAttribute="bottom" id="1k7-Rp-lXj"/>
+                <constraint firstItem="WhM-By-pSB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TtZ-nV-abA"/>
+                <constraint firstAttribute="trailing" secondItem="WhM-By-pSB" secondAttribute="trailing" id="kgg-HT-Dzs"/>
+                <constraint firstItem="WhM-By-pSB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wYn-Dn-2FL"/>
+            </constraints>
+            <size key="customSize" width="208" height="51"/>
+            <connections>
+                <outlet property="textLable" destination="WhM-By-pSB" id="Ml0-vc-EUn"/>
+            </connections>
+            <point key="canvasLocation" x="447" y="340.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

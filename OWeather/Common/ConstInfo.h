@@ -9,11 +9,15 @@
 #import <Foundation/Foundation.h>
 
 
-//请求的url
+#pragma mark- 请求的url
+
 extern NSString const *cityListURL;
 extern NSString const *weatherHistoryURL;
 
+#pragma mark- 通知名称
 
-//常量数据
+extern NSString const *NFLocationUpdateComplte;
+
+#pragma  mark- 常量数据
 extern NSString const *apiKey;
 
