@@ -10,8 +10,8 @@
 
 @interface NSObject (ExtendInfo)
 
-@property(assign,nonatomic) CGFloat currentScreenWidth;
-@property(assign,nonatomic) CGFloat currentScreenHeight;
-@property(assign,nonatomic) CGSize currentScreenSize;
+@property(assign,nonatomic) CGFloat Screen_Width;
+@property(assign,nonatomic) CGFloat Screen_Height;
+@property(assign,nonatomic) CGSize Screen_Size;
 
 @end

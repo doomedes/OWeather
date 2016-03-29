@@ -47,6 +47,7 @@
 		4E0AA1851CA548630058CEC9 /* CityNameRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1841CA548630058CEC9 /* CityNameRequestOperation.m */; };
 		4E0AA1881CA5487E0058CEC9 /* CityInfoRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1871CA5487E0058CEC9 /* CityInfoRequestOperation.m */; };
 		4E0AA18B1CA548AC0058CEC9 /* CityIdRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA18A1CA548AC0058CEC9 /* CityIdRequestOperation.m */; };
+		4E0AA1921CA92E0E0058CEC9 /* TemperatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0AA1911CA92E0E0058CEC9 /* TemperatureView.m */; };
 		4E1C87C91CA65EDA006128D9 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87C71CA65EDA006128D9 /* LocationViewController.m */; };
 		4E1C87CA1CA65EDA006128D9 /* LocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E1C87C81CA65EDA006128D9 /* LocationViewController.xib */; };
 		4E1C87CE1CA67D49006128D9 /* CityCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1C87CC1CA67D49006128D9 /* CityCollectionViewCell.m */; };
@@ -61,6 +62,8 @@
 		4E45C8491CA57AB800CA73B4 /* BasicRequestManagerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C8461CA57AB800CA73B4 /* BasicRequestManagerQueue.m */; };
 		4E45C84A1CA57AB800CA73B4 /* BasicRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C8481CA57AB800CA73B4 /* BasicRequestOperation.m */; };
 		4E45C84D1CA5815700CA73B4 /* LocationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E45C84C1CA5815700CA73B4 /* LocationOperation.m */; };
+		4E684E5B1CAA5C9200A0A085 /* TickView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E684E5A1CAA5C9200A0A085 /* TickView.m */; };
+		4E684E5E1CAA739100A0A085 /* CurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E684E5D1CAA739100A0A085 /* CurveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +143,8 @@
 		4E0AA1871CA5487E0058CEC9 /* CityInfoRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityInfoRequestOperation.m; path = OWeather/NWKModel/CityInfoRequestOperation.m; sourceTree = SOURCE_ROOT; };
 		4E0AA1891CA548AC0058CEC9 /* CityIdRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityIdRequestOperation.h; path = OWeather/NWKModel/CityIdRequestOperation.h; sourceTree = SOURCE_ROOT; };
 		4E0AA18A1CA548AC0058CEC9 /* CityIdRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CityIdRequestOperation.m; path = OWeather/NWKModel/CityIdRequestOperation.m; sourceTree = SOURCE_ROOT; };
+		4E0AA1901CA92E0E0058CEC9 /* TemperatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureView.h; sourceTree = "<group>"; };
+		4E0AA1911CA92E0E0058CEC9 /* TemperatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureView.m; sourceTree = "<group>"; };
 		4E1C87C61CA65EDA006128D9 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		4E1C87C71CA65EDA006128D9 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		4E1C87C81CA65EDA006128D9 /* LocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationViewController.xib; sourceTree = "<group>"; };
@@ -165,6 +170,10 @@
 		4E45C8481CA57AB800CA73B4 /* BasicRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicRequestOperation.m; sourceTree = "<group>"; };
 		4E45C84B1CA5815700CA73B4 /* LocationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationOperation.h; sourceTree = "<group>"; };
 		4E45C84C1CA5815700CA73B4 /* LocationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationOperation.m; sourceTree = "<group>"; };
+		4E684E591CAA5C9200A0A085 /* TickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickView.h; sourceTree = "<group>"; };
+		4E684E5A1CAA5C9200A0A085 /* TickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickView.m; sourceTree = "<group>"; };
+		4E684E5C1CAA739100A0A085 /* CurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveView.h; sourceTree = "<group>"; };
+		4E684E5D1CAA739100A0A085 /* CurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -403,6 +412,20 @@
 			path = Model/NWKModel;
 			sourceTree = "<group>";
 		};
+		4E0AA18F1CA92DE60058CEC9 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				4E0AA1901CA92E0E0058CEC9 /* TemperatureView.h */,
+				4E0AA1911CA92E0E0058CEC9 /* TemperatureView.m */,
+				4E684E591CAA5C9200A0A085 /* TickView.h */,
+				4E684E5A1CAA5C9200A0A085 /* TickView.m */,
+				4E684E5C1CAA739100A0A085 /* CurveView.h */,
+				4E684E5D1CAA739100A0A085 /* CurveView.m */,
+			);
+			name = CustomUI;
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
 		4E1C87D01CA67D54006128D9 /* CityFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +446,7 @@
 		4E45C8351CA5726D00CA73B4 /* VCWeather */ = {
 			isa = PBXGroup;
 			children = (
+				4E0AA18F1CA92DE60058CEC9 /* CustomUI */,
 				4E1C87D01CA67D54006128D9 /* CityFiles */,
 				4E0AA1771CA5441C0058CEC9 /* BaseViewController.h */,
 				4E0AA1781CA5441C0058CEC9 /* BaseViewController.m */,
@@ -537,11 +561,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E684E5E1CAA739100A0A085 /* CurveView.m in Sources */,
 				4E0AA14B1CA4E0B40058CEC9 /* MJRefreshAutoFooter.m in Sources */,
 				4E0AA1521CA4E0B40058CEC9 /* MJRefreshAutoStateFooter.m in Sources */,
+				4E684E5B1CAA5C9200A0A085 /* TickView.m in Sources */,
 				4E0AA1541CA4E0B40058CEC9 /* MJRefreshBackNormalFooter.m in Sources */,
 				4E45C84A1CA57AB800CA73B4 /* BasicRequestOperation.m in Sources */,
 				4E0AA1561CA4E0B40058CEC9 /* MJRefreshGifHeader.m in Sources */,
+				4E0AA1921CA92E0E0058CEC9 /* TemperatureView.m in Sources */,
 				4E0AA15B1CA4E0B40058CEC9 /* UIScrollView+MJExtension.m in Sources */,
 				4E45C84D1CA5815700CA73B4 /* LocationOperation.m in Sources */,
 				4E1C87C91CA65EDA006128D9 /* LocationViewController.m in Sources */,

@@ -25,7 +25,13 @@
 
 #import "LocationOperation.h"
 
+
 //VC相关
 #import "BaseViewController.h"
+#import "TemperatureView.h"
+#import "TickView.h"
+#import "CurveView.h"
 
 
+#define  ColorWithRGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+#define  ColorWithRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]

@@ -44,12 +44,12 @@
 - (void) collectionViewLoad {
     
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
-    layout.itemSize=CGSizeMake((self.currentScreenWidth-cityHotTableViewCell_MinimumitemSpacing*4)/3, 40);
+    layout.itemSize=CGSizeMake((NSInteger)(self.Screen_Width-cityHotTableViewCell_MinimumitemSpacing*4)/3, 40);
     layout.minimumInteritemSpacing=cityHotTableViewCell_MinimumitemSpacing;
     layout.minimumLineSpacing=cityHotTableViewCell_MinimumitemSpacing;
     layout.sectionInset=UIEdgeInsetsMake(cityHotTableViewCell_MinimumitemSpacing, cityHotTableViewCell_MinimumitemSpacing, cityHotTableViewCell_MinimumitemSpacing, cityHotTableViewCell_MinimumitemSpacing);
     
-    self.collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.currentScreenWidth, cityHotTableViewCell_Height) collectionViewLayout:layout];
+    self.collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, self.Screen_Width, cityHotTableViewCell_Height) collectionViewLayout:layout];
     [self.collectionView registerNib:[UINib nibWithNibName:@"CityCollectionViewCell"  bundle:nil] forCellWithReuseIdentifier:cityHotTableViewCell_CollectionIdentity];
     self.collectionView.delegate=self;
     self.collectionView.dataSource=self;

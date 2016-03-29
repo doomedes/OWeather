@@ -10,15 +10,15 @@
 
 @implementation NSObject (ExtendInfo)
 
--(CGFloat)currentScreenWidth {
+-(CGFloat)Screen_Width {
     return [UIScreen mainScreen].bounds.size.width;
 }
 
--(CGFloat)currentScreenHeight{
+-(CGFloat)Screen_Height {
     return [UIScreen mainScreen].bounds.size.height;
 }
 
--(CGSize)currentScreenSize {
+-(CGSize)Screen_Size {
     return [UIScreen mainScreen].bounds.size;
 }
 

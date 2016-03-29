@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "379C4620F990B5A2E2CDCA081821ABAB2C6C5D6E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "111AD32BF9B1075EF84238CDE29501205BE1417E" : 0,
+    "379C4620F990B5A2E2CDCA081821ABAB2C6C5D6E" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D0924DDF-98D3-4DF5-82A4-FD901635F094",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "111AD32BF9B1075EF84238CDE29501205BE1417E" : "",
+    "379C4620F990B5A2E2CDCA081821ABAB2C6C5D6E" : "OWeather\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OWeather",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OWeather.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/doomedes\/SwitchAnimation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "111AD32BF9B1075EF84238CDE29501205BE1417E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/doomedes\/OWeather.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "379C4620F990B5A2E2CDCA081821ABAB2C6C5D6E"
+    }
+  ]
+}

@@ -50,7 +50,7 @@
 }
 
 -(void) tableViewLoad {
-    tableview=[[UITableView alloc]initWithFrame:CGRectMake(0, 66, self.currentScreenWidth, self.currentScreenHeight-66) style:UITableViewStyleGrouped];
+    tableview=[[UITableView alloc]initWithFrame:CGRectMake(0, 66, self.Screen_Width, self.Screen_Height-66) style:UITableViewStyleGrouped];
     [tableview registerClass:[CityHotTableViewCell class] forCellReuseIdentifier:locationVC_TableViewIdentity_hot];
     [tableview registerClass:[CityUpdateingTableViewCell class] forCellReuseIdentifier:locationVC_TableViewIdentity_current];
     [tableview registerClass:[UITableViewCell class] forCellReuseIdentifier:locationVC_TableViewIdentity];
@@ -89,7 +89,7 @@
         self.currentCityName=[notification.userInfo valueForKey:@"city"];
         [tableview reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationNone];
     }else{
-        
+        NSLog(@"%@",notification.userInfo);
     }
 }
 
