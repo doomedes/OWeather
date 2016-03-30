@@ -24,7 +24,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.managerQueue=[[BasicRequestManagerQueue alloc]initWithUrlString:cityListURL];
+    self.managerQueue=[[BasicRequestManagerQueue alloc]initWithBaseURL:[NSURL URLWithString:cityListURL]];
     
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self showHomeWeather];

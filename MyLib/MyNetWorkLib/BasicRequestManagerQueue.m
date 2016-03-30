@@ -10,19 +10,33 @@
 
 @implementation BasicRequestManagerQueue
 
-- (instancetype)initWithUrlString:(NSString *) baseUrl {
-    self = [super init];
+-(instancetype)initWithBaseURL:(NSURL *)url {
+    self=[super initWithBaseURL:url];
     if (self) {
-        
-        self.baseUrl=baseUrl;
         //返回数据序列化方式
         self.responseSerializer=[AFHTTPResponseSerializer serializer];
         
-//        self.manager = [AFHTTPSessionManager manager];
-//        self.manager.responseSerializer=[AFHTTPResponseSerializer serializer];
-
+        //        self.manager = [AFHTTPSessionManager manager];
+        //        self.manager.responseSerializer=[AFHTTPResponseSerializer serializer];
+        
     }
     return self;
+
 }
+
+//- (instancetype)initWithUrlString:(NSString *) baseUrl {
+//    self = [super init];
+//    if (self) {
+//        
+//        self.baseUrl=baseUrl;
+//        //返回数据序列化方式
+//        self.responseSerializer=[AFHTTPResponseSerializer serializer];
+//        
+////        self.manager = [AFHTTPSessionManager manager];
+////        self.manager.responseSerializer=[AFHTTPResponseSerializer serializer];
+//
+//    }
+//    return self;
+//}
 
 @end

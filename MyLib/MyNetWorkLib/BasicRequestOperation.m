@@ -12,7 +12,7 @@
 @interface BasicRequestOperation ()
 
 @property(strong,nonatomic) BasicRequestManagerQueue * managerQueue;
-
+@property (strong,nonatomic) NSURLSessionDataTask *task;
 @end
 
 @implementation BasicRequestOperation
@@ -123,25 +123,64 @@
 
 //请求创建
 - (NSMutableURLRequest *) requestFromCurrentProrperty {
+    // 自己实现,不支持文件
+    /*
+     
+     NSURL *url ;
+     if([self.httpMethod isEqualToString:@"GET"]){
+     NSString * httpBody=[self httpBodyFromGETParameter:self.parameters withHttpBodyType:self.httpBodyFormate];
+     url=[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@",self.managerQueue.baseURL.absoluteString,httpBody]];
+     }else{
+     url=self.managerQueue.baseURL;
+     }
+     
+     
+     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+     request.HTTPMethod=self.httpMethod;
+     request.timeoutInterval=self.timeoutInterval;
+     
+     
+     if([self.httpMethod isEqualToString:@"POST"]){
+     NSData *httpBody=[self httpBodyFromPOSTParameter:self.parameters withHttpBodyType:self.httpBodyFormate];
+     request.HTTPBody=httpBody;
+     }
+     
+     //header处理
+     if(self.headers&&self.headers.count>0) {
+     for (NSString * key in self.headers) {
+     [request setValue:self.headers[key] forHTTPHeaderField:key];
+     }
+     }
+     
+     return request;
+     
+     */
     
-    NSURL *url ;
+    //使用AFN
+    NSMutableURLRequest *request;
+    NSError *error;
+    
     if([self.httpMethod isEqualToString:@"GET"]){
-        NSString * httpBody=[self httpBodyFromGETParameter:self.parameters withHttpBodyType:self.httpBodyFormate];
-        url=[NSURL URLWithString:[NSString stringWithFormat:@"%@?%@",self.managerQueue.baseUrl,httpBody]];
+        
+        request=[[AFHTTPRequestSerializer serializer] requestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters error:&error];
+        
     }else{
-        url=[NSURL URLWithString:self.managerQueue.baseUrl];
+        //    不支持get
+        if(self.httpBodyFormate==NSHttpBodyWithDefault){
+            request= [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                
+//                [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
+//                [formData appendPartWithFileData:nil name:@"" fileName:@"" mimeType:@""];
+                
+            } error:&error];
+        }else {
+            request= [[AFJSONRequestSerializer serializer] multipartFormRequestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                 
+             } error:&error ];
+            
+        }
     }
-    
-    
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
-    request.HTTPMethod=self.httpMethod;
-    request.timeoutInterval=self.timeoutInterval;
-    
-    
-    if([self.httpMethod isEqualToString:@"POST"]){
-        NSData *httpBody=[self httpBodyFromPOSTParameter:self.parameters withHttpBodyType:self.httpBodyFormate];
-        request.HTTPBody=httpBody;
-    }
+  
     
     //header处理
     if(self.headers&&self.headers.count>0) {
@@ -149,8 +188,8 @@
             [request setValue:self.headers[key] forHTTPHeaderField:key];
         }
     }
+    return  request;
     
-    return request;
 }
 
 //开始请求
@@ -159,10 +198,16 @@
 //    for (NSURLSessionTask * task in  self.managerQueue.tasks) {
 //        [task cancel];
 //    }
-    
-     
+
+    //取消当前task
+    if(self.task&&
+       self.task.state!=NSURLSessionTaskStateCanceling&&
+       self.task.state!=NSURLSessionTaskStateCompleted) {
+        [self.task cancel];
+    }
     NSMutableURLRequest *request=[self requestFromCurrentProrperty];
-    NSURLSessionDataTask *task=[self.managerQueue dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+    
+    self.task=[self.managerQueue dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         
         NSHTTPURLResponse *httpResponse=(NSHTTPURLResponse *)response;
         NSError *currentError;
@@ -181,7 +226,7 @@
         
         
     }];
-    [task resume];
+    [self.task resume];
 }
 
 @end

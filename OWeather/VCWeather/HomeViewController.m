@@ -29,15 +29,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.cityListOperation=[[CityListRequestOperation alloc]initWithManager:self.appDelegate.managerQueue];
-//    self.cityListOperation.cityName=@"北京";
-//    self.cityListOperation.completionhander=^(NSHTTPURLResponse *response, id data, NSError *error) {
-//        if(error){
-//            NSLog(@"%@",error);
-//        }else{
-//            NSLog(@"%@",data);
-//        }
-//    };
+    self.cityListOperation=[[CityListRequestOperation alloc]initWithManager:self.appDelegate.managerQueue];
+    self.cityListOperation.cityName=@"北京";
+    self.cityListOperation.completionhander=^(NSHTTPURLResponse *response, id data, NSError *error) {
+        if(error){
+            NSLog(@"%@",error);
+        }else{
+            NSLog(@"%@",data);
+        }
+    };
+    [self.cityListOperation startRequest];
+    
  
     TemperatureView *tempView=[[TemperatureView alloc]initWithFrame:CGRectMake(0, 0, 200, 300)];
     tempView.fillBackColor=ColorWithRGB(212,227,235);

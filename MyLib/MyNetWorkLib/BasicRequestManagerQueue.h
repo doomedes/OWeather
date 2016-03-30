@@ -11,8 +11,8 @@
 @interface BasicRequestManagerQueue : AFHTTPSessionManager
 
 
-//请求基地址
-@property (copy,nonatomic) NSString * baseUrl;
+//请求基地址(AFHTTPSessionManager.baseURL)
+//@property (copy,nonatomic) NSString * baseUrl;
 
 //当前状态
 @property (assign,nonatomic) int status;
