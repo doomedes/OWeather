@@ -33,6 +33,9 @@ typedef void (^CompletionHandler) (NSHTTPURLResponse *response, id data, NSError
 //参数信息
 -(NSDictionary *) parameters;
 
+//上传文件
+-(NSDictionary *) uploadDatas;
+
 //请求数据的传输类型（json／默认）
 -(NSHttpBodyFormate) httpBodyFormate;
 

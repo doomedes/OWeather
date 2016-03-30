@@ -165,17 +165,37 @@
         request=[[AFHTTPRequestSerializer serializer] requestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters error:&error];
         
     }else{
-        //    不支持get
+        //不支持get
         if(self.httpBodyFormate==NSHttpBodyWithDefault){
             request= [[AFHTTPRequestSerializer serializer] multipartFormRequestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+                if(!self.uploadDatas&&self.uploadDatas.count>0){
                 
-//                [formData appendPartWithFileURL:[NSURL fileURLWithPath:@"file://path/to/image.jpg"] name:@"file" fileName:@"filename.jpg" mimeType:@"image/jpeg" error:nil];
-//                [formData appendPartWithFileData:nil name:@"" fileName:@"" mimeType:@""];
+                    for (NSString *key in self.uploadDatas.allKeys) {
+                        id uploadData=self.uploadDatas[key];
+                        if([uploadData isKindOfClass:[NSData class]]){
+                            [formData appendPartWithFormData:UIImagePNGRepresentation((UIImage *)uploadData) name:key];
+                        }else if([uploadData isKindOfClass:[NSString class]]){
+                            NSData *dataValue=[[NSData alloc]initWithContentsOfFile :(NSString *)uploadData];
+                            [formData appendPartWithFormData:dataValue name:key];
+                        }
+                    }
+                }
                 
             } error:&error];
         }else {
             request= [[AFJSONRequestSerializer serializer] multipartFormRequestWithMethod:self.httpMethod URLString:self.managerQueue.baseURL.absoluteString parameters:self.parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
-                 
+                if(!self.uploadDatas&&self.uploadDatas.count>0){
+                    
+                    for (NSString *key in self.uploadDatas.allKeys) {
+                        id uploadData=self.uploadDatas[key];
+                        if([uploadData isKindOfClass:[NSData class]]){
+                            [formData appendPartWithFormData:UIImagePNGRepresentation((UIImage *)uploadData) name:key];
+                        }else if([uploadData isKindOfClass:[NSString class]]){
+                            NSData *dataValue=[[NSData alloc]initWithContentsOfFile :(NSString *)uploadData];
+                            [formData appendPartWithFormData:dataValue name:key];
+                        }
+                    }
+                }
              } error:&error ];
             
         }
