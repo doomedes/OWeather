@@ -48,6 +48,9 @@
     return NSHttpBodyWithDefault;
 }
 
+-(NSDictionary *) uploadDatas {
+    return nil;
+}
 
 
 //get请求的参数处理
@@ -240,7 +243,6 @@
         
         //数据处理
         if(self.completionhander) {
-            
             self.completionhander(httpResponse,dic,currentError);
         }
         

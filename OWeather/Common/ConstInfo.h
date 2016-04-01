@@ -11,13 +11,13 @@
 
 #pragma mark- 请求的url
 
-extern NSString const *cityListURL;
-extern NSString const *weatherHistoryURL;
+extern NSString * const cityListURL;
+extern NSString * const weatherHistoryURL;
 
 #pragma mark- 通知名称
 
-extern NSString const *NFLocationUpdateComplte;
+extern NSString * const NFLocationUpdateComplte;
 
 #pragma  mark- 常量数据
-extern NSString const *apiKey;
+extern NSString * const apiKey;
 

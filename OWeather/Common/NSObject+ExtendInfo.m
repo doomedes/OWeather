@@ -10,6 +10,11 @@
 
 @implementation NSObject (ExtendInfo)
 
+@dynamic  Screen_Width;
+@dynamic  Screen_Height;
+@dynamic  Screen_Size;
+
+
 -(CGFloat)Screen_Width {
     return [UIScreen mainScreen].bounds.size.width;
 }

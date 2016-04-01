@@ -123,7 +123,7 @@ msg:成功时存储地址，失败时存储提示信息
  */
 
 - (void) sendNotificationWithCode:(NSNumber *) code  tipMsg:(NSString *) msg city:(NSString *) city {
-    NSDictionary *infos=@{@"code":code,@"msg":msg,@"city":city};
+    NSDictionary *infos=@{@"code":code,@"msg":msg,@"city":city}; 
     [[NSNotificationCenter defaultCenter] postNotificationName:NFLocationUpdateComplte object:self userInfo:infos];
 }
 

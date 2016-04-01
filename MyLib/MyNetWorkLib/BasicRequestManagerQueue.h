@@ -20,6 +20,7 @@
 //@property (strong,nonatomic) AFHTTPSessionManager *manager;
 
 
-- (instancetype)initWithUrlString:(NSString *) baseUrl ;
+//不使用自定义的初始化方法
+//- (instancetype)initWithUrlString:(NSString *) baseUrl ;
 
 @end
